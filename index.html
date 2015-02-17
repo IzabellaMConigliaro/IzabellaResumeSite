@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="./images/icon.png">
@@ -7,6 +9,66 @@
 			Izabella Melendez Congliaro
 		</title>
 		<link rel="stylesheet" href="./css/indexCss.css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<script type="text/javascript" src="./css/jquery-2.1.1.js"></script>
+
+		<script type="text/javascript">
+
+			function init(){
+				
+				document.getElementsByTagName('area')[0].onmouseover=function(){
+					document.getElementById('email').src='./images/emailHover.png';
+					this.onmouseout=function() {
+						document.getElementById('email').src='./images/email.png';
+					}
+				}
+
+				document.getElementsByTagName('area')[1].onmouseover=function(){
+					document.getElementById('github').src='./images/githubHover.png';
+					this.onmouseout=function() {
+						document.getElementById('github').src='./images/github.png';
+					}
+				}
+
+				document.getElementsByTagName('area')[2].onmouseover=function(){
+					document.getElementById('linkedin').src='./images/linkedinHover.png';
+					this.onmouseout=function() {
+						document.getElementById('linkedin').src='./images/linkedin.png';
+					}
+				}
+
+				document.getElementsByTagName('area')[3].onmouseover=function(){
+					document.getElementById('facebook').src='./images/facebookHover.png';
+					this.onmouseout=function() {
+						document.getElementById('facebook').src='./images/facebook.png';
+					}
+				}
+
+				document.getElementsByTagName('area')[4].onmouseover=function(){
+					document.getElementById('twitter').src='./images/twitterHover.png';
+					this.onmouseout=function() {
+						document.getElementById('twitter').src='./images/twitter.png';
+					}
+				}
+
+				document.getElementsByTagName('area')[5].onmouseover=function(){
+					document.getElementById('instagram').src='./images/instagramHover.png';
+					this.onmouseout=function() {
+						document.getElementById('instagram').src='./images/instagram.png';
+					}
+				}
+			}
+
+			if(window.addEventListener){
+				window.addEventListener('load',init,false);
+			}
+			else { 
+				if(window.attachEvent){
+					window.attachEvent('onload',init);
+				}
+			}
+
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -167,16 +229,64 @@
 					<tr>
 						<td>
 							<ul id="footerMenu">
-								<li><a href="mailto:izabellamelendez@gmail.com" target=_blank><img src="./images/email.png"></img></a></li>
-								<li><a href="https://github.com/IzabellaMConigliaro/" target=_blank><img src="./images/github.png"></img></a></li>
-								<li><a href="https://www.linkedin.com/profile/view?id=398994298" target=_blank><img src="./images/linkedin.png"></img></a></li>
-								<li><a href="https://www.facebook.com/izabellamelendez"><img src="./images/facebook.png" target=_blank></img></a></li>
-								<li><a href="http://www.twitter.com/bebellamc" target=_blank><img src="./images/twitter.png"></img></a></li>
-								<li><a href="http://www.instagram.com/bebellamc" target=_blank><img src="./images/instagram.png"></img></a></li>
+								<li><img id="email" src='./images/email.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#emailMap"/>
+									<map name="emailMap" id="emailMap">
+									<area  alt="" title="" href="mailto:izabellamelendez@gmail.com" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
+								<li>
+									<img id="github" src='./images/github.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#githubMap"/>
+									<map name="githubMap" id="githubMap">
+									<area  alt="" title="" href="https://github.com/IzabellaMConigliaro/" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
+        						<li>
+									<img id="linkedin" src='./images/linkedin.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#linkedinMap"/>
+									<map name="linkedinMap" id="linkedinMap">
+									<area  alt="" title="" href="https://www.linkedin.com/profile/view?id=398994298" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
+								<li>
+									<img id="facebook" src='./images/facebook.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#facebookMap"/>
+									<map name="facebookMap" id="facebookMap">
+									<area  alt="" title="" href="https://www.facebook.com/izabellamelendez" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
+								<li>
+									<img id="twitter" src='./images/twitter.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#twitterMap"/>
+									<map name="twitterMap" id="twitterMap">
+									<area  alt="" title="" href="https://www.facebook.com/izabellamelendez" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
+								<li>
+									<img id="instagram" src='./images/instagram.png' style="border: 2px solid #CF5656;
+            						border-radius: 40px;
+            						-moz-border-radius: 40px;
+           							-khtml-border-radius: 40px;
+            						-webkit-border-radius: 40px;" width="72" height="72" orgWidth="72" orgHeight="72" usemap="#instagramMap"/>
+									<map name="instagramMap" id="instagramMap">
+									<area  alt="" title="" href="https://www.facebook.com/izabellamelendez" shape="circle" coords="36,36,36" style="outline:none;" target="_self"     />
+        							</map></li>
 							</ul>
 						</td>
 					</tr>
 				</table>
+				
 			</div>
 		</div>
 	</body>
