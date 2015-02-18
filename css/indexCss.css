@@ -32,36 +32,17 @@ body{
 
 #about{
 	background-color: #CF5656;
-	padding: 20px;
-}
-
-#education{
-	background-color: #ffeeee;
-	padding: 20px;
-	margin-top: 30px;
-}
-
-#skills{
-	background-color: #ffeeee;
-	padding: 20px;
-	margin-top: 30px;
-}
-
-#relevantCoursework{
-	background-color: #ffeeee;
-	padding: 20px;
-	margin-top: 30px;
-}
-
-#additionalInfo{
-	background-color: #ffeeee;
-	padding: 20px;
-	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	height: 120px;
 }
 
 #footer{
 	background-color: #CF5656;
 	padding: 20px;
+	display: block;
+	margin-top: 100px;
 }
 
 .anchor{
@@ -82,22 +63,34 @@ th {
 	width: 300px;
 	border-right: 1px solid #CF5656;
 	font-family: 'Lato', sans-serif;
+
 }
 
 h1{
 	font-size: 18px;
 	font-style: bold;
 	color: #CF5656;
+	margin: 0;
+	padding-bottom: 10px;
 }
 
 h2{
 	font-size: 16px;
 	font-style: bold;
 	color: #EC8080;
+	line-height: 0;
 }
 
 h3{
 	font-size: 13px;
+	margin: 0;
+}
+
+h4{
+	font-size: 15px;
+	margin: 0;
+	padding-bottom: 6px;
+	padding-top: 6px;
 }
 
 table{
@@ -112,21 +105,53 @@ area{
 
 .tableAbout{
 	padding-top: 30px; 
-	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100px;
 }
 
 .tableFooter{
 	padding-top: 40px; 
 	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100px;
 }
 
-.thAboutFooter{
-	border-right: 1px solid #EC8080; 
+.titleAbout{
+	height: 100px;
 	color: #0f0f0f;
+	float:left;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+    display: block;
+    line-height: 100px;
+}
+
+.titleFooter{
+	height: 100px;
+	color: #0f0f0f;
+	float:left;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+    display: block;
+    line-height: 100px;
 }
 
 .tdAbout{
+	height: 100px;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
 	color: #0f0f0f;
+	float: left;
+	text-align: left;
+	padding-top: 20px;
 }
 
 .tdPadding{
@@ -139,7 +164,8 @@ area{
     -moz-border-radius: 40px;
     -khtml-border-radius: 40px;
     -webkit-border-radius: 40px;
-    padding-right: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 
@@ -217,4 +243,91 @@ ul#footerMenu li a{
 	-moz-transition:color 0.2s linear, background 0.5s linear;	
 	-o-transition:color 0.2s linear, background 0.5s linear;	
 	transition:color 0.2s linear, background 0.5s linear;	
+}
+
+.column{
+	float: left;
+	border-left: 1px solid #CF5656;
+	padding-left: 20px;
+	display: block;
+	width: 60%;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	position: relative;
+	height: 250px;	
+}
+
+.leftColumn{
+	float: left;
+	text-align: left;
+}
+
+.title{
+	float:left;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+    height: 250px;
+    display: block;
+    line-height: 230px;
+}
+
+.rightColumn{
+	float: right;
+}
+
+.row{
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.row.newrow{
+	padding-top: 30px;
+}
+
+.leftColumn.newColumn{
+	width: 400px;
+}
+
+.section{
+	height: 250px;
+	background-color: #ffeeee;
+	padding: 20px;
+	display: block;
+	position: relative;
+
+}
+
+.content{
+	padding: 20px;
+	position: block;
+}
+
+.column.courses{
+	padding-top: 70px;
+}
+
+.columnAboutFooter{
+	border-left: 1px solid #EC8080; 
+	float: left;
+	padding-left: 20px;
+	display: block;
+	width: 60%;
+	padding-bottom: 12px;
+	position: relative;
+	height: 100px;
+}
+
+.columnFooter{
+	border-left: 1px solid #EC8080; 
+	float: left;
+	padding-left: 20px;
+	display: block;
+	width: 60%;
+	padding-bottom: 12px;
+	position: relative;
+	height: 100px;
 }
