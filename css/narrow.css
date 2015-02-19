@@ -214,9 +214,21 @@ ul#navBar li.options {
 	padding:0;
 	padding-left: 1px;
 	padding-right: 1px;
-	padding-bottom: 2px;
+	padding-bottom: 4px;
 	float:left;
 	position:left;
+}
+
+ul#navBar li.navBarContacts {
+	width: 55px;
+	display:inline;
+	margin: 0;
+	padding:0;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 4px;
+	float:right;
+	position:right;
 }
 
 ul#navBar li.navBarAI {
@@ -226,6 +238,7 @@ ul#navBar li.navBarAI {
 	padding:0;
 	padding-left: 1px;
 	padding-right: 1px;
+	padding-bottom: 4px;
 	float:left;
 	position:left;
 }
