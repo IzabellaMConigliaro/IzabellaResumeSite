@@ -8,7 +8,9 @@
 			<title>
 				Izabella Melendez Congliaro
 			</title>
-			<link rel="stylesheet" href="./css/indexCss.css">
+			<link rel='stylesheet' media='screen and (max-width: 700px)' href='./css/narrow.css' />
+			<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1161px)' href='./css/medium.css' />
+			<link rel='stylesheet' media='screen and (min-width: 1162px)' href='./css/wide.css' />
 			<meta http-equiv="Content-Script-Type" content="text/javascript">
 			<script type="text/javascript" src="./css/jquery-2.1.1.js"></script>
 
@@ -77,22 +79,24 @@
 						<li><center><a href="#aboutAnchor">About</a></center></li>
 						<li><center><a href="#educationAnchor">Education</a></center></li>
 						<li><center><a href="#skillsAnchor">Skills</a></center></li>
-						<li><center><a href="#relevantCourseworkAnchor">Relevant Coursework</a></center></li>
+						<li><center><a href="#relevantCourseworkAnchor">Coursework</a></center></li>
 						<li><center><a href="#additionalInfoAnchor">Additional Information</a></center></li>
 						<li><center><a href="#footerAnchor">Contacts</a></center></li>
 					</ul>
 				</div>
 				<div id="banner">
-					<img src="./images/banner.jpg" width="100%" />
+					<div id="bannerImage">
+						<img src="./images/banner.jpg" width="100%" />
+					</div>
 				</div>
 				<span class="anchor" id="aboutAnchor"></span>
 				<div id="about">
-					<div class="tableAbout">
-						<div class="titleAbout">
+					<div id="tableAbout">
+						<div id="titleAbout">
 							<th>ABOUT</th>
 						</div>
-						<div class="columnAboutFooter">
-							<div class="tdAbout">I&#39;m Izabella, a Brazilian Software Engineering student trying to improve my professional and personal skills with a 1-year exchange program in USA. I find passion in coding and programming, especially when it challenges me. I think testing my knowledge is the best way to learn new things. I love what a do. I also love traveling, American TV Shows, and a good thriller book.</div>		
+						<div id="columnAbout">
+							<div id="contentAbout">I&#39;m Izabella, a Brazilian Software Engineering student trying to improve my professional and personal skills with a 1-year exchange program in USA. I find passion in coding and programming, especially when it challenges me. I think testing my knowledge is the best way to learn new things. I love what a do. I also love traveling, American TV Shows, and a good thriller book.</div>		
 						</div>
 					</div>
 				</div>
@@ -194,7 +198,7 @@
 				<div id="relevantCoursework" class="section">
 					<div class="content">
 					<div class="title">
-						<th>RELEVANT COURSEWORK</th>
+						<th>COURSEWORK</th>
 					</div>
 					<div class="column courses">
 						<div class="row">
@@ -277,11 +281,11 @@
 				</div>
 				<span class="anchor" id="footerAnchor"></span>
 				<div id="footer">
-					<div class="tableFooter">
-						<div class="titleFooter">
+					<div id="tableFooter">
+						<div id="titleFooter">
 							<th>CONTACTS</th>
 						</div>
-						<div class="columnFooter">
+						<div id="columnFooter">
 							<td>
 								<ul id="footerMenu">
 									<li><img class="imgContacts" id="email" src='./images/email.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#emailMap"/>

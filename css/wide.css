@@ -7,11 +7,16 @@ body{
 	margin: 0px;
 }
 
+td{
+	padding-right: 40px;
+	padding-left: 20px;
+	margin: 0px;
+}
+
 th{
 	width: 300px;
 	border-right: 1px solid #CF5656;
 	font-family: 'Lato', sans-serif;
-
 }
 
 h1{
@@ -26,7 +31,7 @@ h2{
 	font-size: 16px;
 	font-style: bold;
 	color: #EC8080;
-	line-height: 0;
+	line-height: 0.7;
 }
 
 h3{
@@ -46,11 +51,9 @@ area{
 }
 
 #wraper{
-	min-width: 800px;
 }
 
 #nav{
-	min-width: 800px;
  	height: 50px;
 	overflow: hidden;
 	background: rgba(85, 0, 0, .9);
@@ -64,9 +67,12 @@ area{
 }
 
 #banner{
-	min-width: 800px;
 	width: auto;
     height: auto;
+}
+
+#bannerImage{
+
 }
 
 #about{
@@ -77,63 +83,37 @@ area{
 	height: 120px;
 }
 
-#footer{
-	background-color: #CF5656;
-	padding: 20px;
-	display: block;
-	margin-top: 100px;
-}
-
-.anchor{
-  display: block;
-  height: 50px; 
-  margin-top: -50px; 
-  visibility: hidden;
-}
-
-
-
-
-.tableAbout{
+#tableAbout{
 	padding-top: 30px; 
 	padding-left: 20px;
 	padding-right: 20px;
 	height: 100px;
 }
 
-.tableFooter{
-	padding-top: 40px; 
-	padding-bottom: 40px;
+#titleAbout{
+	height: 100px;
+	color: #0f0f0f;
+	float:left;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+    display: block;
+    line-height: 100px;
+}
+
+#columnAbout{
+	border-left: 1px solid #EC8080; 
+	float: left;
 	padding-left: 20px;
-	padding-right: 20px;
+	display: block;
+	width: 60%;
+	padding-bottom: 12px;
+	position: relative;
 	height: 100px;
 }
 
-.titleAbout{
-	height: 100px;
-	color: #0f0f0f;
-	float:left;
-	width: 20%;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-	vertical-align: middle;
-    display: block;
-    line-height: 100px;
-}
-
-.titleFooter{
-	height: 100px;
-	color: #0f0f0f;
-	float:left;
-	width: 20%;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-	vertical-align: middle;
-    display: block;
-    line-height: 100px;
-}
-
-.tdAbout{
+#contentAbout{
 	height: 100px;
 	clear: both;
 	display: block;
@@ -145,23 +125,43 @@ area{
 	padding-top: 20px;
 }
 
-.tdPadding{
-	padding-top: 30px;
+#footer{
+	background-color: #CF5656;
+	padding: 20px;
+	display: block;
+	margin-top: 100px;
 }
 
-.imgContacts{
-	border: 2px solid #CF5656;
-    border-radius: 40px;
-    -moz-border-radius: 40px;
-    -khtml-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: auto;
-    height: auto;
+#tableFooter{
+	padding-top: 40px; 
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100px;
 }
 
+#titleFooter{
+	height: 100px;
+	color: #0f0f0f;
+	float:left;
+	width: 20%;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+    display: block;
+    line-height: 100px;
+}
 
+#columnFooter{
+	border-left: 1px solid #EC8080; 
+	float: left;
+	padding-left: 20px;
+	display: block;
+	width: 60%;
+	padding-bottom: 12px;
+	position: relative;
+	height: 100px;
+}
 
 #navBar{
 	color: rgba(239, 236, 238, 0.67);
@@ -241,6 +241,25 @@ ul#footerMenu li a{
 	transition:color 0.2s linear, background 0.5s linear;	
 }
 
+.anchor{
+  display: block;
+  height: 50px; 
+  margin-top: -50px; 
+  visibility: hidden;
+}
+
+.imgContacts{
+	border: 2px solid #CF5656;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
 .column{
 	float: left;
 	border-left: 1px solid #CF5656;
@@ -306,24 +325,5 @@ ul#footerMenu li a{
 	padding-top: 5%;
 }
 
-.columnAboutFooter{
-	border-left: 1px solid #EC8080; 
-	float: left;
-	padding-left: 20px;
-	display: block;
-	width: 60%;
-	padding-bottom: 12px;
-	position: relative;
-	height: 100px;
-}
 
-.columnFooter{
-	border-left: 1px solid #EC8080; 
-	float: left;
-	padding-left: 20px;
-	display: block;
-	width: 60%;
-	padding-bottom: 12px;
-	position: relative;
-	height: 100px;
-}
+
