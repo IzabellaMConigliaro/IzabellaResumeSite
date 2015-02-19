@@ -1,183 +1,330 @@
-<html>
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="icon" type="image/png" href="./images/icon.png">
-		<title>
-			Izabella Melendez Congliaro
-		</title>
-		<link rel="stylesheet" href="./css/indexCss.css">
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="nav">
-				<ul id="navBar">
-					<li><center><a href="#aboutAnchor">About</a></center></li>
-					<li><center><a href="#educationAnchor">Education</a></center></li>
-					<li><center><a href="#skillsAnchor">Skills</a></center></li>
-					<li><center><a href="#relevantCourseworkAnchor">Relevant Coursework</a></center></li>
-					<li><center><a href="#additionalInfoAnchor">Additional Information</a></center></li>
-					<li><center><a href="#footerAnchor">Contacts</a></center></li>
-				</ul>
-			</div>
-			<div id="banner">
-				<img src="./images/banner.jpg" width="100%" ></img>
-			</div>
-			<span class="anchor" id="aboutAnchor"></span>
-			<div id="about">
-				<table style="width=100%; padding-top: 30px; padding-bottom: 30px;">
-					<tr>
-						<th rowspan="10" style="border-right: 1px solid #EC8080; color: #0f0f0f">ABOUT</th>
-					</tr>
-					<tr>
-						<td style="color: #0f0f0f;">I&#39;	m Izabella, a Brazilian Software Engineering student trying to improve my professional and personal skills with a 1-year exchange program in USA. I find passion in coding and programming, especially when it challenges me. I think testing my knowledge is the best way to learn new things. I love what a do. I also love traveling, American TV Shows, and a good thriller book.</td>		
-	</tr>
-				</table>
-			</div>
-			<span class="anchor" id="educationAnchor"></span>
-			<div id="education">
-				<table style="width=100%">
-					<tr>
-						<th rowspan="8">EDUCATION</th>
-					</tr>
-					<tr>
-						<td><h1>Software Engineering</h1></td>
-						<td><h3>September 2014 - May 2015</h3></td>
-					</tr>
-					<tr>
-						<td><h2>Fairfield University, Fairfield, CT</h2></td>
-						<td><h3>In Progress</h3></td>
-					</tr>
-					<tr>
-						<td><h3>Non-degree international student
-					Brazil Scientific Mobility Program, fully-funded scholarship recipient</h3></td>
-					</tr>
-					<tr>
-						<tr>
-						<td style="padding-top: 30px;"><h1>Computer Engineering</h1></td>
-						<td style="padding-top: 30px;"><h3>February 2012 - December 2017</h3></td>
-					</tr>
-					<tr>
-						<td><h2>Federal Center for Technological Education of Minas Gerais (CEFET-MG), Belo Horizonte, Brazil</h2></td>
-						<td><h3>Suspended</h3></td>
-					</tr>
-					<tr>
-						<td><h3>Undergraduate Student</h3></td>
-					</tr>
-				</table>
-			</div>
-			<span class="anchor" id="skillsAnchor"></span>
-			<div id="skills">
-				<table style="width=100%">
-					<tr>
-						<th rowspan="10">SKILLS</th>
-					</tr>
-					<tr>
-						<td><h1>Programming</h1></td>
-					</tr>
-					<tr>
-						<td><h3>C, C++, Java, Haskell, Prolog, Verilog</h3></td>
-					</tr>
-					<tr>
-						<td style="padding-top: 30px;"><h1>Computer/Other</h1></td>
-					</tr>
-					<tr>
-						<td><h3>HTML, CSS, SQL</h3></td>
-					</tr>
-					<tr>
-						<td style="padding-top: 30px;"><h1>Languages</h1></td>
-					</tr>
-					<tr>
-						<td><h3>Native Portuguese, Advanced English</h3></td>
-					</tr>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+			<link rel="icon" type="image/png" href="./images/icon.png">
+			<title>
+				Izabella Melendez Congliaro
+			</title>
+			<link rel='stylesheet' media='screen and (max-width: 700px)' href='./css/narrow.css' />
+			<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1161px)' href='./css/medium.css' />
+			<link rel='stylesheet' media='screen and (min-width: 1162px)' href='./css/wide.css' />
+			<meta http-equiv="Content-Script-Type" content="text/javascript">
+			<script type="text/javascript" src="./css/jquery-2.1.1.js"></script>
 
-					<tr>
-						<td style="padding-top: 30px;"><h1>Operating Systems</h1></td>
-					</tr>
-					<tr>
-						<td><h3>Windows, Linux, OS X, Android</h3></td>
-					</tr>
-				</table>
+			<script type="text/javascript">
+
+				function init(){
+					
+					document.getElementsByTagName('area')[0].onmouseover=function(){
+						document.getElementById('email').src='./images/emailHover.png';
+						this.onmouseout=function() {
+							document.getElementById('email').src='./images/email.png';
+						}
+					}
+
+					document.getElementsByTagName('area')[1].onmouseover=function(){
+						document.getElementById('github').src='./images/githubHover.png';
+						this.onmouseout=function() {
+							document.getElementById('github').src='./images/github.png';
+						}
+					}
+
+					document.getElementsByTagName('area')[2].onmouseover=function(){
+						document.getElementById('linkedin').src='./images/linkedinHover.png';
+						this.onmouseout=function() {
+							document.getElementById('linkedin').src='./images/linkedin.png';
+						}
+					}
+
+					document.getElementsByTagName('area')[3].onmouseover=function(){
+						document.getElementById('facebook').src='./images/facebookHover.png';
+						this.onmouseout=function() {
+							document.getElementById('facebook').src='./images/facebook.png';
+						}
+					}
+
+					document.getElementsByTagName('area')[4].onmouseover=function(){
+						document.getElementById('twitter').src='./images/twitterHover.png';
+						this.onmouseout=function() {
+							document.getElementById('twitter').src='./images/twitter.png';
+						}
+					}
+
+					document.getElementsByTagName('area')[5].onmouseover=function(){
+						document.getElementById('instagram').src='./images/instagramHover.png';
+						this.onmouseout=function() {
+							document.getElementById('instagram').src='./images/instagram.png';
+						}
+					}
+				}
+
+				if(window.addEventListener){
+					window.addEventListener('load',init,false);
+				}
+				else { 
+					if(window.attachEvent){
+						window.attachEvent('onload',init);
+					}
+				}
+
+			</script>
+		</head>
+		<body>
+			<div id="wrapper">
+				<div id="nav">
+					<ul id="navBar">
+						<li><center><a href="#aboutAnchor">About</a></center></li>
+						<li><center><a href="#educationAnchor">Education</a></center></li>
+						<li><center><a href="#skillsAnchor">Skills</a></center></li>
+						<li><center><a href="#relevantCourseworkAnchor">Coursework</a></center></li>
+						<li><center><a href="#additionalInfoAnchor">Additional Information</a></center></li>
+						<li><center><a href="#footerAnchor">Contacts</a></center></li>
+					</ul>
+				</div>
+				<div id="banner">
+						<img id="bannerImage" src="./images/banner.jpg" width="100%" />
+					<div id="bannerDevice">
+						<img id="bannerImageDevice" src="./images/deviceBanner.png" width="40%" />
+						<p id="name">Izabella Melendez Conigliaro</p>
+						<p>Software Engineer | <a href="mailto:izabellamelendez@gmail.com">izabellamelendez@gmail.com</a></p>
+					</div>
+				</div>
+				<span class="anchor" id="aboutAnchor"></span>
+				<div id="about">
+					<div id="tableAbout">
+						<div id="titleAbout">
+							<th>ABOUT</th>
+						</div>
+						<div id="columnAbout">
+							<div id="contentAbout">I&#39;m Izabella, a Brazilian Software Engineering student trying to improve my professional and personal skills with a 1-year exchange program in USA. I find passion in coding and programming, especially when it challenges me. I think testing my knowledge is the best way to learn new things. I love what a do. I also love traveling, American TV Shows, and a good thriller book.</div>		
+						</div>
+					</div>
+				</div>
+				<span class="anchor" id="educationAnchor"></span>
+				<div id="education" class="section">
+					<div class="content">
+					<div class="title">
+						<th>EDUCATION</th>
+					</div>
+					<div class="column">
+						<div class="row">
+							<div class="leftColumn">
+								<h1>Software Engineering</h1>
+							</div>
+							<div class="rightColumn">
+								<h3>September 2014 - May 2015</h3>
+							</div>
+							<div class="row">
+								<div class="leftColumn">
+									<h2>Fairfield University, Fairfield, CT</h2>
+								</div>
+								<div class="rightColumn">
+									<h3>In Progress</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="leftColumn">
+									<h4>GPA: 4.0</h4>
+									<h3>Non-degree international student
+						Brazil Scientific Mobility Program, fully-funded scholarship recipient</h3>
+								</div>
+							</div>
+						</div>
+						<div class="row newrow">
+							<div class="leftColumn">
+								<h1>Computer Engineering</h1>
+							</div>
+							<div class="rightColumn">
+								<h3>February 2012 - December 2017</h3>
+							</div>
+						</div>
+						<div class="row">
+								<div class="leftColumn">
+									<h2>Federal Center for Technological Education of Minas Gerais, Brazil</h2>
+								</div>
+								<div class="rightColumn">
+									<h3>Suspended</h3>
+								</div>
+						</div>
+						<div class="row">
+								<div class="leftColumn">
+									<h3>Undergraduate Student</h3>
+								</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<span class="anchor" id="skillsAnchor"></span>
+				<div id="skills" class="section">
+					<div class="content">
+					<div class="title">
+						<th>SKILLS</th>
+					</div>
+					<div class="column">
+						<div class="row">
+							<div class="leftColumn">
+								<h1>Programming</h1>
+							</div>
+						</div>
+							<div class="row">
+								<div class="leftColumn">
+									<h3>C, C++, Java, Android SDK</h3>
+								</div>
+							</div>
+							<div class="row newrow">
+								<div class="leftColumn">
+									<h1>Computer/Other</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="leftColumn">
+									<h3>HTML, CSS, SQL, Git, *NIX</h3>
+								</div>
+							</div>
+							<div class="row newrow">
+								<div class="leftColumn">
+									<h1>Languages</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="leftColumn">
+									<h3>Native Portuguese, Advanced English</h3>
+								</div>
+							</div>
+					</div>
+				</div>
+				</div>
+				<span class="anchor" id="relevantCourseworkAnchor"></span>
+				<div id="relevantCoursework" class="section">
+					<div class="content">
+					<div class="title">
+						<th>COURSEWORK</th>
+					</div>
+					<div class="column courses">
+						<div class="row">
+							<div class="leftColumn">
+								<td>Software Testing &#38; Maintenance </td>
+								<div class="leftColumn newColumn">
+									<td>Algorithms and Data Structures I &#38; II </td>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<td>Formal Languages and Automata</td>
+								<div class="leftColumn newColumn">
+									<td>Computer Organization and Architecture I &#38; II</td>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<td>Android Application</td>
+								<div class="leftColumn newColumn">
+									<td>Databases I</td>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<td>Data Mining</td>
+								<div class="leftColumn newColumn">
+									<td>Web Development</td>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<td>Operating Systems</td>
+								<div class="leftColumn newColumn">
+									<td>Advanced Programming in JAVA</td>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<span class="anchor" id="additionalInfoAnchor"></span>
+				<div id="additionalInfo" class="section">
+					<div class="content">
+					<div class="title">
+						<th>ADDITIONAL INFORMATION</th>
+					</div>
+					<div class="column">
+						<div class="row">
+							<div class="leftColumn">
+								<h1>Work Authorization</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<h2>J-1 visa holder</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<h3>Sponsorship and work authorization provided by the Institute of International Education</h3>
+							</div>
+						</div>
+						<div class="row newrow">
+							<div class="leftColumn">
+								<h1>Honors</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="leftColumn">
+								<h3>Brazil Scientific Mobility Program scholarship recipient 2014</h3>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<span class="anchor" id="footerAnchor"></span>
+				<div id="footer">
+					<div id="tableFooter">
+						<div id="titleFooter">
+							<th>CONTACTS</th>
+						</div>
+						<div id="columnFooter">
+								<ul id="footerMenu">
+									<li><img class="imgContacts" id="email" src='./images/email.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#emailMap"/>
+										<map name="emailMap" id="emailMap">
+										<area  alt="" title="" href="mailto:izabellamelendez@gmail.com" shape="circle" coords="36,36,36" target="_self"     />
+	        							</map></li>
+									<li>
+										<img class="imgContacts" id="github" src='./images/github.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#githubMap"/>
+										<map name="githubMap" id="githubMap">
+										<area  alt="" title="" href="https://github.com/IzabellaMConigliaro/" shape="circle" coords="36,36,36" target="_blank"     />
+	        							</map></li>
+	        						<li>
+										<img class="imgContacts" id="linkedin" src='./images/linkedin.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#linkedinMap"/>
+										<map name="linkedinMap" id="linkedinMap">
+										<area  alt="" title="" href="https://www.linkedin.com/profile/view?id=398994298" shape="circle" coords="36,36,36" target="_blank"     />
+	        							</map></li>
+									<li>
+										<img class="imgContacts" id="facebook" src='./images/facebook.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#facebookMap"/>
+										<map name="facebookMap" id="facebookMap">
+										<area  alt="" title="" href="https://www.facebook.com/izabellamelendez" shape="circle" coords="36,36,36" target="_blank"     />
+	        							</map></li>
+									<li>
+										<img class="imgContacts" id="twitter" src='./images/twitter.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#twitterMap"/>
+										<map name="twitterMap" id="twitterMap">
+										<area  alt="" title="" href="https://www.twitter.com/bebellamc" shape="circle" coords="36,36,36" target="_blank"     />
+	        							</map></li>
+									<li>
+										<img class="imgContacts" id="instagram" src='./images/instagram.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#instagramMap"/>
+										<map name="instagramMap" id="instagramMap">
+										<area  alt="" title="" href="http://www.instagram.com/bebellamc" shape="circle" coords="36,36,36" target="_blank"     />
+	        							</map></li>
+								</ul>
+						</div>
+					</div>
+					
+				</div>
 			</div>
-			<span class="anchor" id="relevantCourseworkAnchor"></span>
-			<div id="relevantCoursework">
-				<table style="width=100%">
-					<tr>
-						<th rowspan="6">RELEVANT COURSEWORK</td>
-					</tr>
-					<tr>
-						<td>Algorithms and Data Structures I &#38; II </td>
-						<td>Software Testing &#38; Maintenance</td>
-					</tr>
-					<tr>
-						<td>Computer Organization and Architecture I &#38; II</td>
-						<td>Formal Languages and Automata</td>
-					</tr>
-					<tr>
-						<td>Databases I</td>
-						<td>Android Application</td>
-					</tr>
-					<tr>
-						<td>Web Development</td>
-						<td>Data Mining</td>
-					</tr>
-					<tr>
-						<td>Advanced Programming in JAVA</td>
-						<td>Operating Systems</td>
-					</tr>
-				</table>
-			</div>
-			<span class="anchor" id="additionalInfoAnchor"></span>
-			<div id="additionalInfo">
-				<table style="width=100%">
-					<tr>
-						<th rowspan="10">ADDITIONAL INFORMATION</th>
-					</tr>
-					<tr>
-						<td><h1>Work Authorization</h1></td>
-					</tr>
-					<tr>
-						<td><h2>J-1 visa holder</h2></td>
-					</tr>
-					<tr>
-						<td><h3>Sponsorship and work authorization provided by the Institute of International Education</h3></td>
-					</tr>
-					<tr>
-						<tr>
-						<td style="padding-top: 30px;"><h1>Honors</h1></td>
-					</tr>
-					<tr>
-						<td><h3>Brazil Scientific Mobility Program scholarship recipient 2014</h3></td>
-					</tr>
-					<tr>
-						<tr>
-						<td style="padding-top: 30px;"><h1>GPA</h1></td>
-					</tr>
-					<tr>
-						<td><h3>4.0</h3></td>
-					</tr>
-				</table>
-			</div>
-			<span class="anchor" id="footerAnchor"></span>
-			<div id="footer">
-				<table style="width=100%; padding-top: 40px; padding-bottom: 40px;">
-					<tr>
-						<th rowspan="20" style="border-right: 1px solid #EC8080; color:#0f0f0f;">CONTACTS</th>
-					</tr>
-					<tr>
-						<td>
-							<ul id="footerMenu">
-								<li><a href="mailto:izabellamelendez@gmail.com" target=_blank><img src="./images/email.png"></img></a></li>
-								<li><a href="https://github.com/IzabellaMConigliaro/" target=_blank><img src="./images/github.png"></img></a></li>
-								<li><a href="https://www.linkedin.com/profile/view?id=398994298" target=_blank><img src="./images/linkedin.png"></img></a></li>
-								<li><a href="https://www.facebook.com/izabellamelendez"><img src="./images/facebook.png" target=_blank></img></a></li>
-								<li><a href="http://www.twitter.com/bebellamc" target=_blank><img src="./images/twitter.png"></img></a></li>
-								<li><a href="http://www.instagram.com/bebellamc" target=_blank><img src="./images/instagram.png"></img></a></li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</body>
-</html>
+		</body>
+	</html>
