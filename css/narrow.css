@@ -266,9 +266,7 @@ ul#navBar li a:visited{
 }
 
 ul#navBar li a:active{
-	background-color: rgba(239, 236, 238, 0.4);
-	color: rgba(85, 0, 0, .9);
-	font-style: bold;
+	color: rgba(239, 236, 238, 0.67);
 }
 
 ul#footerMenu {
@@ -326,6 +324,7 @@ ul#footerMenu li a{
 }
 
 .leftColumn{
+	float: left;
 	text-align: left;
 }
 
@@ -355,7 +354,7 @@ ul#footerMenu li a{
 }
 
 .leftColumn.newColumn{
-	width: 80%;
+	width: 4000px;
 }
 
 .section{
