@@ -75,7 +75,7 @@ area{
 	font-family: 'Muli', sans-serif;
 	color: #550000;
 	text-shadow: 0 0 0.2em #EC8080, 0 0 0.2em #EC8080;
-	line-height: 0.6;
+	line-height: 0.8;
 	text-align: center;
 }
 
@@ -83,7 +83,6 @@ area{
 	text-decoration: none;
 	color: #550000;
 	text-shadow: 0 0 0.2em #EC8080, 0 0 0.2em #EC8080;
-	line-height: 0.6;
 }
 
 #name{
@@ -91,23 +90,27 @@ area{
 	font-style: bold;
 }
 
+#description{
+	line-height: 1.1;
+}
+
 #about{
 	background-color: #CF5656;
 	padding-left: 10px;
 	padding-right: 20px;
-	padding-bottom: 50px;
-	height: 10%;
+	padding-bottom: 15px;
+	min-height: 8%;
 }
 
 #tableAbout{
 	padding-top: 2%; 
 	padding-left: 10px;
 	padding-right: 20px;
-	height: 7%;
+	min-height: 7%;
 }
 
 #titleAbout{
-	padding: 5px;
+	padding: 10px;
 	color: #0f0f0f;
 	width: 20%;
 	font-family: 'Lato', sans-serif;
@@ -120,15 +123,16 @@ area{
 	border-top: 1px solid #EC8080; 
 	padding-top: 5px;
 	padding-left: 10px;
+	padding-bottom: 10px;
 	display: block;
 	width: 100%;
 	padding-bottom: 12px;
 	position: relative;
-	height: 100px;
+	min-height: 90px;
 }
 
 #contentAbout{
-	height: 100px;
+	min-height: 90px;
 	clear: both;
 	display: block;
 	margin: 0;
@@ -174,7 +178,7 @@ area{
 }
 
 #nav{
-	font-size: 13px;
+	font-size: 12px;
  	height: 50px;
 	overflow: hidden;
 	background: rgba(85, 0, 0, .9);
@@ -196,24 +200,38 @@ area{
 }
 
 ul#navBar {
+	padding-top: 6px;
 	margin:0px auto;
 	position:left;
 	float:left;
 	padding-left: 0;
 }
 
-ul#navBar li {
-	width: 60px;
+ul#navBar li.options {
+	width: 55px;
 	display:inline;
 	margin: 0;
 	padding:0;
-	padding-left: 3px;
-	padding-right: 3px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	float:left;
+	position:left;
+}
+
+ul#navBar li.navBarAI {
+	width: 130px;
+	display:inline;
+	margin: 0;
+	padding:0;
+	padding-left: 1px;
+	padding-right: 1px;
 	float:left;
 	position:left;
 }
 
 ul#navBar li a{
+	display: block;
 	position: left;
 	background: rgba(100, 0, 0, .9);
 	color: rgba(239, 236, 238, 0.67);
