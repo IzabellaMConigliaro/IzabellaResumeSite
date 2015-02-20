@@ -69,6 +69,10 @@ area{
 	display: none;
 }
 
+#bannerPrint{
+	display: none;
+}
+
 #bannerImageDevice{
 	display: block;
 	margin-left: auto;

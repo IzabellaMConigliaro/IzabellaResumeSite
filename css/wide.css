@@ -71,6 +71,10 @@ area{
     height: auto;
 }
 
+#bannerPrint{
+	display: none;
+}
+
 #bannerImageDevice{
 	display: none;
 }
