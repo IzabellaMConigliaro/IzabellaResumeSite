@@ -5,6 +5,10 @@ body{
 	font-size: 16px;
 	padding: 0px;
 	margin: 0px;
+	-webkit-font-smoothing: antialiased !important;	
+	-moz-font-smoothing: antialiased !important;	
+	-o-font-smoothing: antialiased !important;	
+	font-smoothing: antialiased !important;
 }
 
 td{
@@ -31,12 +35,13 @@ h2{
 	font-size: 16px;
 	font-style: bold;
 	color: #EC8080;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 
 h3{
 	font-size: 13px;
 	margin: 0;
+	font-weight: normal;
 }
 
 h4{
@@ -276,7 +281,7 @@ ul#footerMenu li a{
 	padding-top: 10px;
 	padding-bottom: 12px;
 	position: relative;
-	min-height: 250px;	
+	min-height: 270px;	
 }
 
 .leftColumn{
@@ -326,7 +331,7 @@ ul#footerMenu li a{
 .content{
 	padding: 20px;
 	position: block;
-	min-height: 250px;
+	min-height: 270px;
 }
 
 .column.courses{
