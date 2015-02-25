@@ -88,6 +88,10 @@ area{
 	display: none;
 }
 
+#projectDevice{
+	display: none;
+}
+
 #about{
 	background-color: #CF5656;
 	padding-left: 20px;
@@ -348,10 +352,6 @@ a.linkProjects {
 	font-size: 12px;
 }
 
-a.linkProjects strong {
-	line-height:30px;
-}
-
 a.linkProjects:hover {
 	text-decoration:none;
 } 
@@ -362,9 +362,10 @@ a.linkProjects span {
     padding:14px 20px;
     margin-top:-50px; 
     margin-left:130px;
-    width:300px; 
+    width:410px; 
     line-height:16px;
 }
+
 a.linkProjects:hover span{
     display:inline; 
     position:absolute; 
@@ -385,4 +386,8 @@ a.linkProjects span
 {
     border-radius:4px;
     box-shadow: 5px 5px 8px #CCC;
+}
+
+#stagApp{
+	width: 150px;
 }
