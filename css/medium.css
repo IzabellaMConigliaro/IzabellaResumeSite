@@ -1,5 +1,5 @@
 body{
-	background-color: #ffeeee;
+	background-color: #fdf2f2;
 	font-family: 'Dosis', sans-serif;
 	color: #3d3d3d;
 	font-size: 16px;
@@ -56,19 +56,6 @@ area{
 }
 
 #wraper{
-}
-
-#nav{
- 	height: 50px;
-	overflow: hidden;
-	background: rgba(85, 0, 0, .9);
-	z-index: 100;
-	box-shadow: 0 1px 4px rgba(49, 49, 64, 0.1);
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100%
 }
 
 #banner{
@@ -177,12 +164,26 @@ area{
 	height: auto;
 }
 
+#nav{
+ 	height: 50px;
+	overflow: hidden;
+	background: rgba(85, 0, 0, .9);
+	z-index: 100;
+	box-shadow: 0 1px 4px rgba(49, 49, 64, 0.1);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%
+}
+
 #navBar{
 	color: rgba(239, 236, 238, 0.67);
 	padding-top: 13px;
 	width: 100%;
 	position: center;
 	margin-right: auto;
+	margin: 0;
 }
 
 ul#navBar {
@@ -191,6 +192,7 @@ ul#navBar {
 	float:left;
 	border-left:auto;
 	border-right:auto;
+	padding-left: 
 }
 
 ul#navBar li {
@@ -204,7 +206,7 @@ ul#navBar li {
 
 ul#navBar li a{
 	position: center;
-	padding:20px 20px;
+	padding:20px 10px;
 	background: rgba(100, 0, 0, .9);
 	color: rgba(239, 236, 238, 0.67);
 	text-decoration: none;
@@ -321,7 +323,7 @@ ul#footerMenu li a{
 
 .section{
 	min-height: 250px;
-	background-color: #ffeeee;
+	background-color: #fdf2f2;
 	padding: 20px;
 	display: block;
 	position: relative;

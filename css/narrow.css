@@ -3,13 +3,17 @@ html {
 }
 
 body{
-	background-color: #ffeeee;
+	background-color: #fdf2f2;
 	font-family: 'Dosis', sans-serif;
 	color: #3d3d3d;
 	font-size: 16px;
 	padding: 0px;
 	margin: 0px;
 	position: relative;
+	-webkit-font-smoothing: antialiased !important;	
+	-moz-font-smoothing: antialiased !important;	
+	-o-font-smoothing: antialiased !important;	
+	font-smoothing: antialiased !important;
 }
 
 td{
@@ -242,7 +246,7 @@ ul#navBar li.navBarContacts {
 }
 
 ul#navBar li.navBarAI {
-	width: 130px;
+	width: 110px;
 	display:inline;
 	margin: 0;
 	padding:0;
@@ -369,7 +373,7 @@ ul#footerMenu li a{
 
 .section{
 	min-height: 250px;
-	background-color: #ffeeee;
+	background-color: #fdf2f2;
 	padding: 10px;
 	display: block;
 	position: relative;
@@ -388,6 +392,7 @@ ul#footerMenu li a{
 .bulletPoint{
 	color: #CF5656;
 }
+
 
 
 
