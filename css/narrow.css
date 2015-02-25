@@ -393,6 +393,24 @@ ul#footerMenu li a{
 	color: #CF5656;
 }
 
+a.linkProjects {
+	outline:none; 
+	color: #550000;
+	font-size: 12px;
+}
+
+a.linkProjects strong {
+	line-height:30px;
+}
+
+a.linkProjects:hover {
+	text-decoration:none;
+} 
+
+a.linkProjects span {
+    display: none;
+}
+
 
 
 

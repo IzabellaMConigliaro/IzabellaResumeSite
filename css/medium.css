@@ -345,3 +345,51 @@ ul#footerMenu li a{
 }
 
 
+
+a.linkProjects {
+	outline:none; 
+	color: #550000;
+	font-size: 12px;
+}
+
+a.linkProjects strong {
+	line-height:30px;
+}
+
+a.linkProjects:hover {
+	text-decoration:none;
+} 
+
+a.linkProjects span {
+    z-index:10;
+    display:none; 
+    padding:14px 20px;
+    margin-top:-50px; 
+    margin-left:130px;
+    width:300px; 
+    line-height:16px;
+}
+a.linkProjects:hover span{
+    display:inline; 
+    position:absolute; 
+    color:black;
+    border:1px solid #CF5656; 
+    background:#fbdfdf;
+}
+
+.callout {
+	z-index:20;
+	position:absolute;
+	top:30px;
+	border:0;
+	left:-12px;
+}
+    
+a.linkProjects span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+
+
