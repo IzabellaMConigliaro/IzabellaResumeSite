@@ -377,12 +377,15 @@ ul#footerMenu li a{
 	padding: 10px;
 	display: block;
 	position: relative;
-
 }
 
 .content{
 	padding: 20px;
 	position: block;
+}
+
+.projects{
+	height: 520px;
 }
 
 .column.courses{
@@ -404,7 +407,12 @@ a.linkProjects strong {
 }
 
 a.linkProjects:hover {
-	text-decoration:none;
+	outline:none; 
+	color: #550000;
+	font-size: 12px;
+    outline: none;
+    text-decoration: none;
+    border-bottom: dashed 1px #CF5656;
 } 
 
 a.linkProjects span {

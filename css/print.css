@@ -6,7 +6,7 @@ body{
 	background-color: white;
 	font-family: 'Lato', sans-serif;
 	color: black;
-	font-size: 14px;
+	font-size: 11px;
 	padding: 0px;
 	margin: 0px;
 	position: relative;
@@ -25,16 +25,16 @@ th{
 }
 
 h1{
-	font-size: 13px;
+	font-size: 10px;
 	font-weight: bold;
 	color: black;
 	margin: 0;
-	padding-bottom: 10px;
+	padding-bottom: 3px;
 	line-height: 1.1;
 }
 
 h2{
-	font-size: 13px;
+	font-size: 10px;
 	color: black;
 	font-style: none;
 	font-weight: bold;
@@ -42,7 +42,7 @@ h2{
 }
 
 h3{
-	font-size: 13px;
+	font-size: 10px;
 	margin: 0;
 	font-style: none;
 	font-weight: normal;
@@ -50,9 +50,9 @@ h3{
 }
 
 h4{
-	font-size: 13px;
+	font-size: 10px;
 	margin: 0;
-	padding-bottom: 6px;
+	padding-bottom: 3px;
 	padding-top: 6px;
 	font-weight: normal;
 	line-height: 1.1;
@@ -66,8 +66,8 @@ area{
 }
 
 #banner{
-	padding-top: 2px;
-	padding-bottom: 10px;
+	padding-top: 0;
+	padding-bottom: 5px;
 	width: auto;
     height: auto;
     display: block;
@@ -78,7 +78,7 @@ area{
 	color: black;
 	line-height: 0.8;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-bottom: 3px solid black;
 }
 
@@ -93,12 +93,12 @@ area{
 
 .column{
 	border-top: 1px dashed black;
-	padding-top: 5px;
+	padding-top: 2px;
 	padding-left: 10px;
 	display: block;
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 12px;
+	padding-top: 5px;
+	padding-bottom: 7px;
 	position: relative;
 	min-height: 100px;	
 }
@@ -140,13 +140,13 @@ area{
 .section{
 	min-height: 100px;
 	background-color: white;
-	padding: 7px;
+	padding: 6px;
 	display: block;
 	position: relative;
 }
 
 .content{
-	padding: 10px;
+	padding: 9px;
 	position: block;
 }
 
@@ -271,5 +271,15 @@ ul#footerMenu li a{
 	display: none;
 }
 
+.linkProjects{
+	display: none;
+}
+
+.projects{
+	height: 220px;
+}
+.coursework{
+	height: 90px;
+}
 
 
