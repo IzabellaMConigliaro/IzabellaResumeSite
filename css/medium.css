@@ -354,6 +354,9 @@ a.linkProjects {
 	outline:none; 
 	color: #550000;
 	font-size: 12px;
+    outline: none;
+    text-decoration: none;
+    border-bottom: dashed 1px #CF5656;
 }
 
 a.linkProjects strong {
@@ -365,20 +368,32 @@ a.linkProjects:hover {
 } 
 
 a.linkProjects span {
-    z-index:10;
-    display:none; 
-    padding:14px 20px;
+   	border:1px solid #CF5656; 
+    background:#fbdfdf;     
+    width: 280px;
+    padding: 14px 20px;
+    margin-top: 50;
+    margin-left: -130px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    position: absolute;
+    border-radius:5px;
+    box-shadow: 5px 5px 8px #CCC;
+    -webkit-transition-duration: 0.4s, 0.3s, 0.4s, 0.2s;	
+	-moz-transition-duration: 0.4s, 0.3s, 0.4s, 0.2s;	
+	-o-transition-duration: 0.4s, 0.3s, 0.4s, 0.2s;
+    transition-duration: 0.4s, 0.3s, 0.4s, 0.2s;
+}
+
+a.linkProjects:hover span{
+    opacity: 1;
+    text-decoration: none;
+    visibility: visible;
+    overflow: visible;
+    display: inline;
     margin-top:-50px; 
     margin-left:130px;
-    width:280px; 
-    line-height:16px;
-}
-a.linkProjects:hover span{
-    display:inline; 
-    position:absolute; 
-    color:black;
-    border:1px solid #CF5656; 
-    background:#fbdfdf;
 }
 
 .callout {
@@ -387,12 +402,6 @@ a.linkProjects:hover span{
 	top:30px;
 	border:0;
 	left:-12px;
-}
-    
-a.linkProjects span
-{
-    border-radius:4px;
-    box-shadow: 5px 5px 8px #CCC;
 }
 
 #stagApp{
