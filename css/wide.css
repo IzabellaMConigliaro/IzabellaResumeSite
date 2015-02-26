@@ -337,6 +337,10 @@ ul#footerMenu li a{
 	position: relative;
 }
 
+.projects{
+	height: 360px;
+}
+
 .content{
 	padding: 20px;
 	position: block;
