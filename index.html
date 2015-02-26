@@ -15,6 +15,27 @@
 			<link rel="stylesheet" type="text/css" media="print" href="./css/print.css" />
 			<meta http-equiv="Content-Script-Type" content="text/javascript">
 			<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+	
 			<script type="text/javascript" src="./css/jquery-2.1.1.js"></script>
 
 			<script type="text/javascript">
@@ -73,8 +94,6 @@
 					}
 				}
 
-				
-
 			</script>
 		</head>
 		<body>
@@ -83,13 +102,13 @@
 					<div id="nav-anchor"></div>
 					<nav>
 						<ul id="navBar">
-							<li class="options"><center><a href="#aboutAnchor">About</a></center></li>
-							<li class="options"><center><a href="#educationAnchor">Education</a></center></li>
-							<li class="options"><center><a href="#skillsAnchor">Skills</a></center></li>
-							<li class="options"><center><a href="#relevantCourseworkAnchor">Coursework</a></center></li>
-							<li class="options"><center><a href="#projectsAnchor">Projects</a></center>
-							<li class="navBarAI"><center><a href="#additionalInfoAnchor">Additional Information</a></center></li>
-							<li class="navBarContacts"><center><a href="#footerAnchor">Contacts</a></center></li>
+							<li class="options"><a href="#aboutAnchor">About</a></li>
+							<li class="options"><a href="#educationAnchor">Education</a></li>
+							<li class="options"><a href="#skillsAnchor">Skills</a></li>
+							<li class="options"><a href="#relevantCourseworkAnchor">Coursework</a></li>
+							<li class="options"><a href="#projectsAnchor">Projects</a>
+							<li class="navBarAI"><a href="#additionalInfoAnchor">Additional Information</a></li>
+							<li class="navBarContacts"><a href="#footerAnchor">Contacts</a></li>
 						</ul>
 					</nav>
 				</div>
