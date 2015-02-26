@@ -72,8 +72,10 @@ area{
 }
 
 #banner{
-	width: auto;
+	width: 100%;
     height: auto;
+    position: fixed;
+    margin-top: 50px;
 }
 
 #bannerPrint{
@@ -98,6 +100,9 @@ area{
 	padding-right: 20px;
 	padding-bottom: 50px;
 	height: 120px;
+	margin-top: 30%;
+	display: block;
+	position: relative;
 }
 
 #tableAbout{
@@ -398,15 +403,4 @@ a.linkProjects:hover span{
 
 #stagApp{
 	width: 150px;
-}
-
-nav.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-    margin-top:12px;
-}
-
-a.nav-active {
-    color:#ccc;
 }

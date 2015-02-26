@@ -59,8 +59,10 @@ area{
 }
 
 #banner{
-	width: auto;
+	width: 100%;
     height: auto;
+    position: fixed;
+    margin-top: 50px;
 }
 
 #bannerPrint{
@@ -85,6 +87,9 @@ area{
 	padding-right: 20px;
 	padding-bottom: 50px;
 	height: 120px;
+	margin-top: 30%;
+	display: block;
+	position: relative;
 }
 
 #tableAbout{
@@ -347,8 +352,6 @@ ul#footerMenu li a{
 .bulletPoint{
 	color: #CF5656;
 }
-
-
 
 a.linkProjects {
 	outline:none; 
