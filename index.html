@@ -1,418 +1,82 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-		<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-			<link rel="icon" type="image/png" href="./images/icon.png">
-			<title>
-				Izabella Melendez Congliaro
-			</title>
-			<link rel='stylesheet' media='screen and (max-width: 700px)' href='./css/narrow.css' />
-			<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1161px)' href='./css/medium.css' />
-			<link rel='stylesheet' media='screen and (min-width: 1162px)' href='./css/wide.css' />
-			<link rel="stylesheet" type="text/css" media="print" href="./css/print.css" />
-			<meta http-equiv="Content-Script-Type" content="text/javascript">
-			<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <title>Izabella Resume - Parallax</title>
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+  </head>
 
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  <body>
+    <div class="wrapper">
+      <main>
+        
+          <section class="module parallax parallax-1">
+            <div class="container">
+              <h1>Brazil</h1>
+            </div>
+          </section>
 
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
+          <section class="module content">
+            <div class="container">
+              <h2>Federal Center of Technological Education of Minas Gerais</h2>
+              <p>I'm an undergraduate Computer Engineering student.</p>
+              <p>I started my undergraduation programm at CEFET-MG in 2012 and my graduation is expected for December 2017</p>
+              <p>In August, 2014, I started a government exchange program called Brazil Science Without Borders, so my undergraduation in Brazil is currently suspended. It will be resumed when I come back to Brazil, in August 2015.</p>
+              <p class="title">Revelant Coursework:</p>
+              <ul>
+                <li><span class="bulletPoint">&ofcir;</span> Algorithms and Data Structures I &#38; II</li>
+                <li><span class="bulletPoint">&ofcir;</span> Formal Languages and Automata</li>
+                <li><span class="bulletPoint">&ofcir;</span> Computer Organization and Architecture I &#38; II</li>
+              </ul>
+            </div>
+          </section>
 
-			<script type="text/javascript" src="./css/jquery-2.1.1.js"></script>
+          <section class="module parallax parallax-2">
+            <div class="container">
+              <h1>USA</h1>
+            </div>
+          </section>
 
-			<script type="text/javascript">
+          <section class="module content">
+            <div class="container">
+              <h2>Fairfield University</h2>
+              <p>I'm doing my one year exchange programm at Fairfield University.</p>
+              <p>Since in Brazil the Computer Engineering major is closer to the development software field, at Fairfield University I'm only taking Software Engineering courses.</p>
+              <p>Currenly, I have a 4.0/4.0 GPA.</p>
+              <p class="title">Relevant Coursework:</p>
+              <ul>
+                <li><span class="bulletPoint">&ofcir;</span> Android Application</li>
+                <li><span class="bulletPoint">&ofcir;</span> Data Mining</li>
+                <li><span class="bulletPoint">&ofcir;</span> Web Development</li>
+                <li><span class="bulletPoint">&ofcir;</span> Operating Systems</li>
+                <li><span class="bulletPoint">&ofcir;</span> Advanced Programming in JAVA</li>
+                <li><span class="bulletPoint">&ofcir;</span> Software Testing &#38; Maintenance</li>
+              </ul>
+            </div>
+          </section>
 
-				function init(){
-					
-					document.getElementsByTagName('area')[0].onmouseover=function(){
-						document.getElementById('email').src='./images/emailHover.png';
-						this.onmouseout=function() {
-							document.getElementById('email').src='./images/email.png';
-						}
-					}
+          <section class="module parallax parallax-3">
+            <div class="container">
+              <h1>Code</h1>
+            </div>
+          </section>
 
-					document.getElementsByTagName('area')[1].onmouseover=function(){
-						document.getElementById('github').src='./images/githubHover.png';
-						this.onmouseout=function() {
-							document.getElementById('github').src='./images/github.png';
-						}
-					}
+          <section class="module content">
+            <div class="container">
+              <h2>Programming Skills</h2>
+              <p >With this exchange programm, I was able to improve my programming skills.</p>
+              <p>Last semester I was able to learn how to develop Android Apps and I was able to code a fully functional Android App developed with Android SDK and SQLite database. This semester I'm improving my Java skills on the Advanced Programming in Java course.</p>
+              <p class="title">My Programming Skills:</p>
+              <p>C, C++, Java, Android SDK.</p>
+              <p class="title">Computer/Other:</p>
+              <p>HTML, CSS, SQL, Git, *NIX.</p>
 
-					document.getElementsByTagName('area')[2].onmouseover=function(){
-						document.getElementById('linkedin').src='./images/linkedinHover.png';
-						this.onmouseout=function() {
-							document.getElementById('linkedin').src='./images/linkedin.png';
-						}
-					}
-
-					document.getElementsByTagName('area')[3].onmouseover=function(){
-						document.getElementById('facebook').src='./images/facebookHover.png';
-						this.onmouseout=function() {
-							document.getElementById('facebook').src='./images/facebook.png';
-						}
-					}
-
-					document.getElementsByTagName('area')[4].onmouseover=function(){
-						document.getElementById('twitter').src='./images/twitterHover.png';
-						this.onmouseout=function() {
-							document.getElementById('twitter').src='./images/twitter.png';
-						}
-					}
-
-					document.getElementsByTagName('area')[5].onmouseover=function(){
-						document.getElementById('instagram').src='./images/instagramHover.png';
-						this.onmouseout=function() {
-							document.getElementById('instagram').src='./images/instagram.png';
-						}
-					}
-				}
-
-				if(window.addEventListener){
-					window.addEventListener('load',init,false);
-				}
-				else { 
-					if(window.attachEvent){
-						window.attachEvent('onload',init);
-					}
-				}
-
-			</script>
-		</head>
-		<body>
-			<div id="wrapper">
-				<div id="nav">
-					<div id="nav-anchor"></div>
-					<nav>
-						<ul id="navBar">
-							<li class="options"><center><a href="#aboutAnchor">About</a></center></li>
-							<li class="options"><center><a href="#educationAnchor">Education</a></center></li>
-							<li class="options"><center><a href="#skillsAnchor">Skills</a></center></li>
-							<li class="options"><center><a href="#relevantCourseworkAnchor">Coursework</a></center></li>
-							<li class="options"><center><a href="#projectsAnchor">Projects</a></center></li>
-							<li class="navBarAI"><center><a href="#additionalInfoAnchor">Additional Information</a></center></li>
-							<li class="navBarContacts"><center><a href="#footerAnchor">Contacts</a></center></li>
-						</ul>
-					</nav>
-				</div>
-				<div id="banner">
-						<img id="bannerImage" src="./images/banner.jpg" width="100%" />
-					<div id="bannerDevice">
-						<img id="bannerImageDevice" src="./images/deviceBanner.png" width="40%" />
-						<p id="name">Izabella Melendez Conigliaro</p>
-						<p id="description">Software Engineer | <a href="mailto:izabellamelendez@gmail.com">izabellamelendez@gmail.com</a></p>
-					</div>
-					<div id="bannerPrint">
-						<p id="name">Izabella Melendez Conigliaro</p>
-						<p id="description">1073 North Benson Road, Mailbox #3575, Fairfield, CT<br>
-							izabellamelendez@gmail.com | (347) 741-0210</p>
-					</div>
-				</div>
-				<span class="anchor" id="aboutAnchor"></span>
-				<div id="about">
-					<div id="tableAbout">
-						<div id="titleAbout">
-							<th>ABOUT</th>
-						</div>
-						<div id="columnAbout">
-							<div id="contentAbout">I&#39;m Izabella, a Brazilian Software Engineering student trying to improve my professional and personal skills with a 1-year exchange program in USA. I find passion in coding and programming, especially when it challenges me. I think testing my knowledge is the best way to learn new things. I love what I do. I also love traveling, American TV Shows, and a good thriller book.</div>		
-						</div>
-					</div>
-				</div>
-				<span class="anchor" id="educationAnchor"></span>
-				<div id="education" class="section">
-					<div class="content">
-					<div class="title">
-						<th>EDUCATION</th>
-					</div>
-					<div class="column">
-						<div class="row">
-							<div class="leftColumn">
-								<h1>Software Engineering</h1>
-							</div>
-							<div class="rightColumn">
-								<h3>September 2014 - May 2015</h3>
-							</div>
-							<div class="row">
-								<div class="leftColumn">
-									<h2>Fairfield University, Fairfield, CT</h2>
-								</div>
-								<div class="rightColumn">
-									<h3>In Progress</h3>
-								</div>
-							</div>
-							<div class="row">
-								<div class="leftColumn">
-									<h4>GPA: 4.0</h4>
-									<h3>Non-degree international student
-						Brazil Scientific Mobility Program, fully-funded scholarship recipient</h3>
-								</div>
-							</div>
-						</div>
-						<div class="row newrow">
-							<div class="leftColumn">
-								<h1>Computer Engineering</h1>
-							</div>
-							<div class="rightColumn">
-								<h3>February 2012 - December 2017</h3>
-							</div>
-						</div>
-						<div class="row">
-								<div class="leftColumn">
-									<h2>Federal Center for Technological Education of Minas Gerais, Brazil</h2>
-								</div>
-								<div class="rightColumn">
-									<h3>Suspended</h3>
-								</div>
-						</div>
-						<div class="row">
-								<div class="leftColumn">
-									<h3>Undergraduate Student</h3>
-								</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<span class="anchor" id="skillsAnchor"></span>
-				<div id="skills" class="section">
-					<div class="content">
-					<div class="title">
-						<th>SKILLS</th>
-					</div>
-					<div class="column">
-						<div class="row">
-							<div class="leftColumn">
-								<h1>Programming</h1>
-							</div>
-						</div>
-							<div class="row">
-								<div class="leftColumn">
-									<h3>C, C++, Java, Android SDK</h3>
-								</div>
-							</div>
-							<div class="row newrow">
-								<div class="leftColumn">
-									<h1>Computer/Other</h1>
-								</div>
-							</div>
-							<div class="row">
-								<div class="leftColumn">
-									<h3>HTML, CSS, SQL, Git, *NIX</h3>
-								</div>
-							</div>
-							<div class="row newrow">
-								<div class="leftColumn">
-									<h1>Languages</h1>
-								</div>
-							</div>
-							<div class="row">
-								<div class="leftColumn">
-									<h3>Native Portuguese, Advanced English</h3>
-								</div>
-							</div>
-					</div>
-				</div>
-				</div>
-				<span class="anchor" id="relevantCourseworkAnchor"></span>
-				<div id="relevantCoursework" class="section">
-					<div class="content coursework">
-					<div class="title">
-						<th>COURSEWORK</th>
-					</div>
-					<div class="column courses">
-						<div class="row">
-							<div class="leftColumn">
-								<td><span class="bulletPoint">&ofcir;</span> Software Testing &#38; Maintenance </td>
-								<div class="leftColumn newColumn">
-									<td><span class="bulletPoint">&ofcir;</span> Algorithms and Data Structures I &#38; II </td>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<td><span class="bulletPoint">&ofcir;</span>  Formal Languages and Automata</td>
-								<div class="leftColumn newColumn">
-									<td><span class="bulletPoint">&ofcir;</span> Computer Organization and Architecture I &#38; II</td>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<td><span class="bulletPoint">&ofcir;</span>  Android Application</td>
-								<div class="leftColumn newColumn">
-									<td><span class="bulletPoint">&ofcir;</span> Databases I</td>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<td><span class="bulletPoint">&ofcir;</span> Data Mining</td>
-								<div class="leftColumn newColumn">
-									<td><span class="bulletPoint">&ofcir;</span> Web Development</td>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<td><span class="bulletPoint">&ofcir;</span> Operating Systems</td>
-								<div class="leftColumn newColumn">
-									<td><span class="bulletPoint">&ofcir;</span> Advanced Programming in JAVA</td>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
-				<span class="anchor" id="projectsAnchor"></span>
-				<div id="projects" class="section projects">
-					<div class="content projects">
-					<div class="title">
-						<th>PROJECTS</th>
-					</div>
-					<div class="column projects">
-						<div class="row">
-							<div class="leftColumn">
-								<h1>StagApp</h1>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h2>Android Application</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h3>A customized grade tracker specific for Fairfield University students. Contains: relevant contact information e.g. Health Center, Public Safety, Fairfield University shuttle schedule, Business hours of offices and eateries, and a Student Area, in which the student can insert his or her class schedule, add courses and grades, and consult them. The application was developed with Android SDK and SQLite database.</h3>
-									<a href="./projects/stagapp.apk" class="linkProjects" download>
-    									Download Compiled File
-    								<span id="stagApp">
-									    <img class="callout" src="./images/callout.gif" />
-									    <img src="./images/stagapp.gif" style="float:right;" id="projectFull"/>
-								         <img src="./images/stagappSmall.gif" style="float:right;" id="projectDevice"/>
-								    </span>
-								</a>
-							</div>
-						</div>
-						<div class="row newrow">
-							<div class="leftColumn">
-								<h1>YEx International System</h1>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h2>Java Application</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h3>Built for a student exchange program company, the software keeps record of students' information e.g. Name, ID, Address, Passport, and Visa. In another tab, the user has access to all the records, which can be filtered by predefined attributes. The software was developed using Java and SQL database. (User Interface in Portuguese).</h3>
-								<a href="./projects/YExSystem.zip" class="linkProjects" download>
-    									Download Compiled File
-    								<span>
-								       <img class="callout" src="./images/callout.gif" />
-								       <img src="./images/YExSystem.gif" style="float:right;" id="projectFull"/>
-								        <img src="./images/YExSystemSmall.gif" style="float:right;" id="projectDevice"/>
-							    	</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<span class="anchor" id="additionalInfoAnchor"></span>
-				<div id="additionalInfo" class="section">
-					<div class="content">
-					<div class="title">
-						<th>ADDITIONAL INFORMATION</th>
-					</div>
-					<div class="column">
-						<div class="row">
-							<div class="leftColumn">
-								<h1>Work Authorization</h1>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h2>J-1 visa holder</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h3>Sponsorship and work authorization provided by the Institute of International Education</h3>
-							</div>
-						</div>
-						<div class="row newrow">
-							<div class="leftColumn">
-								<h1>Honors</h1>
-							</div>
-						</div>
-						<div class="row">
-							<div class="leftColumn">
-								<h3>Brazil Scientific Mobility Program scholarship recipient 2014</h3>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				<span class="anchor" id="footerAnchor"></span>
-				<div id="footer">
-					<div id="tableFooter">
-						<div id="titleFooter">
-							<th>CONTACTS</th>
-						</div>
-						<div id="columnFooter">
-								<ul id="footerMenu">
-									<li><img class="imgContacts" id="email" src='./images/email.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#emailMap"/>
-										<map name="emailMap" id="emailMap">
-										<area  alt="" title="" href="mailto:izabellamelendez@gmail.com" shape="circle" coords="36,36,36" target="_self"     />
-	        							</map></li>
-									<li>
-										<img class="imgContacts" id="github" src='./images/github.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#githubMap"/>
-										<map name="githubMap" id="githubMap">
-										<area  alt="" title="" href="https://github.com/IzabellaMConigliaro/" shape="circle" coords="36,36,36" target="_blank"     />
-	        							</map></li>
-	        						<li>
-										<img class="imgContacts" id="linkedin" src='./images/linkedin.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#linkedinMap"/>
-										<map name="linkedinMap" id="linkedinMap">
-										<area  alt="" title="" href="https://www.linkedin.com/profile/view?id=398994298" shape="circle" coords="36,36,36" target="_blank"     />
-	        							</map></li>
-									<li>
-										<img class="imgContacts" id="facebook" src='./images/facebook.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#facebookMap"/>
-										<map name="facebookMap" id="facebookMap">
-										<area  alt="" title="" href="https://www.facebook.com/izabellamelendez" shape="circle" coords="36,36,36" target="_blank"     />
-	        							</map></li>
-									<li>
-										<img class="imgContacts" id="twitter" src='./images/twitter.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#twitterMap"/>
-										<map name="twitterMap" id="twitterMap">
-										<area  alt="" title="" href="https://www.twitter.com/bebellamc" shape="circle" coords="36,36,36" target="_blank"     />
-	        							</map></li>
-									<li>
-										<img class="imgContacts" id="instagram" src='./images/instagram.png' width="72" height="72" orgWidth="72" orgHeight="72" usemap="#instagramMap"/>
-										<map name="instagramMap" id="instagramMap">
-										<area  alt="" title="" href="http://www.instagram.com/bebellamc" shape="circle" coords="36,36,36" target="_blank"     />
-	        							</map></li>
-								</ul>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</body>
-	</html>
+            </div>
+          </section>
+      </main>
+    </div>
+  </body>
+</html>

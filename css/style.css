@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fdf2f2;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  color: #CF5656;
+  padding-left: 40px;
+}
+section.module p.title{
+  color: #CF5656;
+  font-size: 18px;
+  padding-top: 10px;
+}
+section.module p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 60px;
+  font-family: 'Dosis', sans-serif;
+  background-color: #fdf2f2;
+}
+section.module.content {
+  padding: 40px 0;
+  background-color: #fdf2f2;
+  margin-bottom: 40px;
+}
+section.module.parallax {
+  height: 680px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fdf2f2;
+}
+section.module.parallax h1 {
+  font-family: 'Lato', sans-serif;
+  color: rgba(253, 242, 242, 0.8);
+  font-size: 150px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module ul{
+  font-family: 'Dosis', sans-serif;
+  padding-left: 80px;
+  list-style: none;
+  line-height: 1.2;
+}
+.bulletPoint{
+  color: #CF5656;
+}
+section.module.parallax-1 {
+  background-image: url("../images/1.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/3.jpg");
+}
